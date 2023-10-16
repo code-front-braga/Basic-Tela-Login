@@ -245,7 +245,10 @@ footer
         padding: 5px;
         display: flex;
         flex-direction: column;
-    }    
+    }
+    .tela-box-login{
+        padding: 30px;
+    }  
 }
 
 @media screen and (max-width: 800px) {
@@ -253,5 +256,8 @@ footer
         gap: 0px;
         display: flex;
         flex-direction: column;
+    }
+    .tela-box-login{
+        padding: 30px;
     }    
 }
