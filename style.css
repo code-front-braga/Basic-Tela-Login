@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('Imagens/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/*Tela Login*/
+#div-container
+{   position: relative;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    border: .1rem solid;
+    border-color: #999;
+    box-shadow: 0rem 0rem 1.5rem #00000095;
+    border-radius: 1.2rem;
+    overflow: hidden; /*quando for colocar o botão de fechar, para ajustar*/
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-container .tela-box-login
+{
+    width: 100%;
+    padding: 50px;
+}
+
+.tela-box-login h2
+{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #fff;
+    margin: 50px 0;
+}
+
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    transition: .5s;
+    pointer-events: none;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -5px;
+}
+
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 0px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.input-box i
+{
+    position: absolute;
+    right: 0;
+    line-height: 27px;
+}
+
+.lembrar-esquecer
+{
+    display: flex;
+    justify-content: space-between;
+    margin: -30px 0 15px;
+}
+
+.lembrar-esquecer input
+{
+    margin-right: 5px;
+}
+
+.lembrar-esquecer a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.lembrar-esquecer a:hover
+{
+    text-decoration: underline;
+}
+
+.porta-fechada-login
+{
+    display: flex;
+    margin-left: 86%;
+    margin-top: 40px;
+    background: url('Imagens/porta-fechada-branco.png');
+    filter:drop-shadow(1rem 0rem 1.2rem #000);
+    cursor: pointer;
+    height: 50px;
+    transition: .5s;
+}
+
+.porta-fechada-login:hover
+{
+    background-image: url('Imagens/porta-aberta-branco.png');
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(0 0 1rem #fff);
+}
+
+#div-container .icon-close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    z-index: 1;
+}
+
+#div-container .icon-close:hover
+{
+    font-size: 2rem;
+    filter: drop-shadow(0rem .5rem 2rem #fff);
+}
+
+/*Footer*/
+footer
+{
+    background: linear-gradient(117deg, rgba(36,21,90,1) 0%, rgba(106,28,73,1) 40%, rgba(186,34,57,1) 100%);
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 20%;
+}
+
+.footer-contatos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contatos a
+{
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-contatos a i
+{
+    font-size: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: #999;
+    box-shadow: 0rem 1rem 1rem #000;
+}
+
+.footer-contatos .bi-whatsapp
+{
+    background-color: #25d366;
+}
+
+.footer-contatos .bi-instagram
+{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.footer-contatos .bi-github
+{
+    background: #000;
+}
+
+.footer-contatos .bi-envelope
+{
+    background: #0099ff;
+}
+
+.bi-instagram:hover, .bi-github:hover
+{
+    transform: translate(0px, -4px);
+    transition: all .4s ease-in-out;
+}
+
+.bi-whatsapp:hover, .bi-envelope:hover
+{
+    transform: translate(0px, -4px);
+    transition: all .4s ease-in-out;
+}
