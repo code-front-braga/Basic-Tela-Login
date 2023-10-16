@@ -239,25 +239,3 @@ footer
     transform: translate(0px, -4px);
     transition: all .4s ease-in-out;
 }
-
-@media screen and (max-width: 480px) {
-    .footer-contatos a {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-    }
-    .tela-box-login{
-        padding: 30px;
-    }  
-}
-
-@media screen and (max-width: 800px) {
-    .footer-contatos a {
-        gap: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-    .tela-box-login{
-        padding: 30px;
-    }    
-}
