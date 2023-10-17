@@ -239,39 +239,3 @@ footer
     transform: translate(0px, -4px);
     transition: all .4s ease-in-out;
 }
-
-@media screen and (max-height: 915px) {
-    #div-container
-    {
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    footer
-    {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .footer-contatos a
-    {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 0px;
-        justify-content: space-between;
-        font-size: .8rem;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .footer-contatos a i
-    {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-}
